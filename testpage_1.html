@@ -76,14 +76,13 @@ limitations under the License.
             // Ckeck if the data is received
             if (vaMsgObj && vaMsgObj.data) {
                 // Give the img and a elements the src and url 
-				document.write("No data recieved");
+			
                 document.getElementById("dynamic_img").src = `./images/${vaMsgObj.data[0][0]}.png`;
                 document.getElementById("target_url").href = `https://en.wikipedia.org/wiki/${vaMsgObj.data[0][0]}`;
                 document.getElementById("target_iframe").src = "";
             }
             else {
                 // Clear all if no data
-				document.write("No data recieved");
                 document.getElementById("dynamic_img").src = "";
                 document.getElementById("target_url").href = "";
                 document.getElementById("target_iframe").src = "";
